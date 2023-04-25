@@ -47,23 +47,7 @@ const Header = ({showHeaderImage}) => {
                                 <Link className="nav-link" to="/about-us">About</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="features.html">Features</a>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="pagesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                                <div className="dropdown-menu" aria-labelledby="pagesMenu">
-                                    <a className="dropdown-item" href="blog.html">Blog</a>
-                                    <a className="dropdown-item" href="login.html">Login</a>
-                                    <a className="dropdown-item" href="register.html">Register</a>
-                                    <a className="dropdown-item" href="faq.html">FAQ</a>
-                                    <a className="dropdown-item" href="404.html">404</a>
-                                    <a className="dropdown-item" href="careers.html">Careers</a>
-                                    <a className="dropdown-item" href="blog-single.html">Single blog</a>
-                                    <a className="dropdown-item" href="privacy-policy.html">Privacy policy</a>
-                                </div>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="contact.html">Contact</a>
+                                <Link className="nav-link" to="/contact-us">Contact</Link>
                             </li>
                         </ul>
                         <ul className="navbar-nav mt-2 mt-lg-0">
