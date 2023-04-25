@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -66,9 +67,9 @@ const Footer = () => {
             <nav>
               <ul className="nav flex-column">
                 <li className="nav-item">
-                  <a href="#!" className="nav-link">
+                  <Link to="/about-us" className="nav-link">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a href="#!" className="nav-link">
@@ -77,8 +78,8 @@ const Footer = () => {
                 </li>
                 <li className="nav-item">
                   <a href="#!" className="nav-link">
-                    Careers{" "}
-                    <span className="badge badge-pill badge-secondary ml-3">
+                    Careers
+                    <span className="badge badge-pill badge-secondary ml-2">
                       Hiring
                     </span>
                   </a>
@@ -97,18 +98,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="col-md-3 mt-3 mt-md-0">
-            <p>
-              &copy; foi. 2020{" "}
-              <a
-                href="https://www.bootstrapdash.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-reset"
-              >
-                BootstrapDash
-              </a>
-              .
-            </p>
+            
             <p>All rights reserved.</p>
             <nav className="social-menu">
               <a href="#!">
