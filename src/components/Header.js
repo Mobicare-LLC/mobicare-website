@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HeaderContent = () => {
     return (
@@ -23,26 +24,27 @@ const HeaderContent = () => {
         </div>);
 }
 
-const Header = ({hasContent}) => {
+const Header = ({showHeaderImage}) => {
     // console.log('headerchilldren', content);
-    hasContent = hasContent ?? false;
+    showHeaderImage = showHeaderImage ?? false;
+
     return (
-        <header className="foi-header landing-header">
+        <header className={"foi-header landing-header " + (!showHeaderImage ? "alt-header-img": "") }>
             <div className="container">
                 <nav className="navbar navbar-expand-lg navbar-light foi-navbar">
-                    <a className="navbar-brand" href="#">
+                    <Link className="navbar-brand" to="/">
                         <img src="assets/images/logo_long.png" alt="Mobicare" style={{height: 40, marginLeft: -25, marginRight: 25}} />
-                    </a>
+                    </Link>
                     <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="collapsibleNavId">
                         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li className="nav-item active">
-                                <a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
+                                <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="about.html">About</a>
+                                <Link className="nav-link" to="/about-us">About</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="features.html">Features</a>
@@ -74,7 +76,7 @@ const Header = ({hasContent}) => {
                         </ul>
                     </div>
                 </nav>
-                {!hasContent ? <></> : 
+                {!showHeaderImage ? <></> : 
                     <HeaderContent />
                 }
             </div>

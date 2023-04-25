@@ -3,10 +3,10 @@ import Footer from './Footer';
 import Header from './Header';
 
 const Layout = (props) => {
-    const {hasContent, children} = props;
+    const {showHeaderImage, children} = props;
     return (
         <div>
-            <Header hasContent={hasContent}/>
+            <Header showHeaderImage={showHeaderImage}/>
             {children}
             <Footer />
         </div>

@@ -12728,6 +12728,9 @@ html {
   background-size: 167px, 65%;
   background-position: left bottom, right top;
 }
+.alt-header-img {
+  background-image: url("../images/bg_1@2x.svg") !important;
+}
 
 .landing-feature-icon {
   display: inline-block;

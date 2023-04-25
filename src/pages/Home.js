@@ -1,34 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-
-const HeaderContent = () => {
-    return (
-        <div className="header-content">
-            <div className="row">
-                <div className="col-md-6">
-                    <h1>Great app that makes your life awesome</h1>
-                    <p className="text-dark">He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement.</p>
-                    <button className="btn btn-primary mb-4">Get Started</button>
-                    <div className="my-2">
-                        <p className="header-app-download-title">GET OUR MOBILE APP</p>
-                    </div>
-                    <div>
-                        <button className="btn btn-app-download mr-2"><img src="assets/images/ios.svg" alt="App store" /></button>
-                        <button className="btn btn-app-download"><img src="assets/images/android.svg" alt="play store" /></button>
-                    </div>
-                </div>
-                <div className="col-md-6">
-                    <img src="assets/images/app_1.png" alt="app" width="388px" className="img-fluid" />
-                </div>
-            </div>
-        </div>);
-}
-
 const Home = () => {
 
     return (
-        <Layout hasContent={true}>
+        <Layout showHeaderImage={true}>
             <section className="py-5 mb-5">
                 <div className="container">
                     <h2 className="section-title">Application Features</h2>
