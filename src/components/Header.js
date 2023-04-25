@@ -30,8 +30,8 @@ const Header = ({hasContent}) => {
         <header className="foi-header landing-header">
             <div className="container">
                 <nav className="navbar navbar-expand-lg navbar-light foi-navbar">
-                    <a className="navbar-brand" href="index.html">
-                        <img src="assets/images/logo.svg" alt="FOI" />
+                    <a className="navbar-brand" href="#">
+                        <img src="assets/images/logo_long.png" alt="Mobicare" style={{height: 40, marginLeft: -25, marginRight: 25}} />
                     </a>
                     <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -61,7 +61,7 @@ const Header = ({hasContent}) => {
                                 </div>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="contact.html">contact</a>
+                                <a className="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                         <ul className="navbar-nav mt-2 mt-lg-0">

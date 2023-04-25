@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="row footer-widget-area">
           <div className="col-md-3">
             <div className="py-3">
-              <img src="assets/images/logo-white.svg" alt="FOI" />
+              <img src="assets/images/logo_light.png" style={{height: 40, marginLeft: -15}} alt="Mobicare logo light" />
             </div>
             <p className="font-os font-weight-semibold mb3">Get our mobile app</p>
             <div>
